@@ -1,13 +1,15 @@
 version : '2'
 services:
-backend:
- build:
-context: "./backend"
-ports:
-- "9000:9000"
+   backend:
+    build:
+      context: "./backend"
+    ports:
 
-frontend:
-build:
-context: "./frontend"
-ports:
-- "8000:8000" 
+        - "9000:9000"
+
+   frontend:
+     build:
+      context: "./frontend"
+     ports:
+
+         - "8000:8000" 
