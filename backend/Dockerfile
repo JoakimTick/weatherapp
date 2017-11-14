@@ -1,6 +1,6 @@
 FROM node:latest
-ADD / /usr/backend/
-WORKDIR /usr/backend
+WORKDIR /usr/weatherapp/backend
+COPY package.json /usr/weatherapp/backend
 RUN npm install
 EXPOSE 9000
 

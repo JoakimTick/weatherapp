@@ -1,6 +1,6 @@
 FROM node:latest
-ADD / /usr/frontend/
-WORKDIR /usr/frontend
+WORKDIR /usr/weatherapp/frontend
+COPY package.json /usr/weatherapp/frontend
 RUN npm install
 EXPOSE 8000
 
