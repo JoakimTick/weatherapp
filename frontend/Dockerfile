@@ -1,6 +1,6 @@
 FROM node:latest
-ADD / /usr/backend/
-WORKDIR /usr/backend
+ADD / /usr/frontend/
+WORKDIR /usr/frontend
 RUN npm install
 EXPOSE 8000
 
